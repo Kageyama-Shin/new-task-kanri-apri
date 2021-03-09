@@ -26,13 +26,14 @@ textarea {
 /* タイポグラフィ */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+  line-height: 2;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 4.4em;
   letter-spacing: -2px;
   margin-bottom: 30px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -46,7 +47,7 @@ h2 {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.5em;
   line-height: 1.7em;
 }
 
@@ -106,11 +107,11 @@ li {
 }
 
 #header{
-   background-color: #87ceeb;
+   background-color: teal;
 }
 
 .header-logo{
-   color:#fff !important;
+   color:#ffffff !important;
    font-weight: bold;
 }
 
@@ -119,6 +120,16 @@ li {
 }
 
 #dropdown-title {
-  background-color: #87ceeb;
+   background-color: teal;
+}
+
+#top-main-title{
+   font-weight: bold;
+  font-style: italic; 
+    
+}
+
+.login-btm{
+   margin-top: 10px;
 }
 
