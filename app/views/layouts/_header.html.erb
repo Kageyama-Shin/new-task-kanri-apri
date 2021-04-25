@@ -1,12 +1,11 @@
 <header class="navbar navbar-fixed-top navbar-inverse" id="header">
   <div class="container">
-    <%= link_to "
-    task App", root_path, id: "logo" %>
+    <%= link_to "task App", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "トップ", root_path, class:"header-logo"%></li>
         <% if logged_in? %>
-          <li><%= link_to "タスク作成", '#', class:"header-logo"%></li>
+          <li><%= link_to "タスク作成", new_user_task_path(current_user), class:"header-logo"%></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle header-logo" data-toggle="dropdown" id="dropdown-title">
               <%= current_user.name %> <b class="caret"></b>
@@ -14,6 +13,7 @@
             <ul class="dropdown-menu">
               <li><%= link_to "Show", current_user %></li>
               <li><%= link_to "Settings", '#' %></li>
+              <li><%= link_to "タスク一覧", user_tasks_path(current_user) %></li>
               <li class="divider"></li>
               <li><%= link_to "Log out", logout_path, method: :delete %></li>
             </ul>

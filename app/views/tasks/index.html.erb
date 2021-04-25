@@ -1,0 +1,12 @@
+<div class="main posts-new">
+  <div class="container">
+    <h1 class="form-heading">タスク一覧</h1>
+  </div>
+  <table class="table table-condensed table-hover" id="table-users">
+    <% @task.each do |task| %>
+      <tr>
+        <td><%= link_to task.name, user_task_path(@user,task) %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
